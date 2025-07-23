@@ -2,95 +2,330 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Luhardt Burger - Software Developer</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Luhardt Burger<span class="logo-dot">.</span></a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" role="button" tabindex="0">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
 
-  <!-- ======= Navbar ======= -->
-  <header class="navbar">
-    <div class="logo">Luhardt</div>
-    <nav class="nav-menu">
-      <a href="#about" class="nav-link">About</a>
-      <a href="#experience" class="nav-link">Experience</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#education" class="nav-link">Education</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </nav>
-    <div class="hamburger">☰</div>
-  </header>
-
-  <!-- ======= Hero Sections ======= -->
   <section class="hero" id="hero">
-    <div class="hero-content" data-aos="fade-up">
-      <h1>Hello, I'm <span>Luhardt Burger</span></h1>
-      <p>A passionate Software Developer</p>
-      <a href="#contact" class="btn">Hire Me</a>
+    <div class="hero-container container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="greeting">Hi, my name is</p>
+          <h1 class="hero-title">Luhardt <span class="name-last">Burger</span></h1>
+          <h2 class="hero-subtitle">
+            <i class="fas fa-laptop-code"></i> Software Developer
+          </h2>
+          <p class="hero-description">
+            I am a passionate software developer with expertise in front-end and back-end technologies,
+            committed to crafting beautiful and performant applications.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary"
+              ><i class="fas fa-envelope"></i> Contact Me</a
+            >
+            <a href="#about" class="btn btn-secondary"
+              ><i class="fas fa-info-circle"></i> About Me</a
+            >
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/luhardt" target="_blank" rel="noopener" class="social-link"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://linkedin.com/in/luhardtburger" target="_blank" rel="noopener" class="social-link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="mailto:luhardt@example.com" class="social-link"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="profile-card">
+          <div class="profile-img" aria-label="Profile Image">
+            <span class="initials">LB</span>
+            <span class="status-indicator" title="Online"></span>
+          </div>
+          <div class="contact-quick">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+27 82 123 4567</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Potchefstroom, South Africa</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-globe"></i>
+              <span>luhardtburger.cv</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      Scroll Down
     </div>
   </section>
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="section" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>I’m a software developer who studied at North-West University for 4 years, including one year focused on mathematics and physics. I love creating clean, efficient, and user-friendly web experiences.</p>
+  <!-- About Section -->
+  <section class="about container" id="about" aria-labelledby="about-title">
+    <h2 class="section-title" id="about-title">About Me</h2>
+    <p class="about-description">
+      I am a qualified software developer with a background in mathematics and physics. I studied at North-West University, gaining strong problem-solving and analytical skills.
+    </p>
+    <div class="about-highlights" role="list">
+      <div class="highlight-item" role="listitem">
+        <i class="fas fa-code"></i> Software Development
+      </div>
+      <div class="highlight-item" role="listitem">
+        <i class="fas fa-network-wired"></i> Networking & CCTV Installation
+      </div>
+      <div class="highlight-item" role="listitem">
+        <i class="fas fa-database"></i> Database Administration
+      </div>
+      <div class="highlight-item" role="listitem">
+        <i class="fas fa-language"></i> Fluent in Afrikaans & English
+      </div>
+    </div>
   </section>
 
-  <!-- ======= Experience Section ======= -->
-  <section id="experience" class="section" data-aos="fade-up">
-    <h2>Experience</h2>
-    <ul>
-      <li>
-        <strong>Junior Developer</strong> – Tech Solutions SA (2022–2024)
-        <p>Built internal tools and helped maintain frontend systems using JavaScript and Python.</p>
-      </li>
-      <li>
-        <strong>Freelance Web Developer</strong> (2021–2022)
-        <p>Developed websites for local businesses using HTML, CSS, and WordPress.</p>
-      </li>
-    </ul>
+  <!-- Experience Section -->
+  <section class="experience container" id="experience" aria-labelledby="experience-title">
+    <h2 class="section-title" id="experience-title">Experience</h2>
+    <div class="timeline" role="list">
+      <div class="timeline-item" role="listitem">
+        <span class="timeline-date">2021 - Present</span>
+        <div class="timeline-content">
+          <h3>Software Developer</h3>
+          <h4>XYZ Solutions</h4>
+          <ul>
+            <li>Developed scalable web applications with React and Node.js.</li>
+            <li>Improved system performance by 30% through code optimization.</li>
+          </ul>
+          <div class="timeline-skills">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+          </div>
+        </div>
+        <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+      </div>
+      <div class="timeline-item" role="listitem">
+        <span class="timeline-date">2019 - 2021</span>
+        <div class="timeline-content">
+          <h3>CCTV Installation Technician</h3>
+          <h4>SecureWatch</h4>
+          <ul>
+            <li>Installed and maintained security camera systems.</li>
+            <li>Provided client support and troubleshooting services.</li>
+          </ul>
+          <div class="timeline-skills">
+            <span class="skill-tag">Networking</span>
+            <span class="skill-tag">Security Systems</span>
+          </div>
+        </div>
+        <div class="timeline-icon"><i class="fas fa-video"></i></div>
+      </div>
+    </div>
   </section>
 
-  <!-- ======= Skills Section ======= -->
-  <section id="skills" class="section" data-aos="fade-up">
-    <h2>Skills</h2>
+  <!-- Skills Section -->
+  <section class="skills container" id="skills" aria-labelledby="skills-title">
+    <h2 class="section-title" id="skills-title">Skills</h2>
     <div class="skills-grid">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Python</span>
-      <span>Git & GitHub</span>
-      <span>WordPress</span>
-      <span>React (Basic)</span>
+      <div class="skills-category">
+        <h3>Programming Languages</h3>
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>JavaScript</span>
+            <span class="skill-percentage">90%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>Python</span>
+            <span class="skill-percentage">75%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 75%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skills-category">
+        <h3>Languages</h3>
+        <div class="language-skills">
+          <div class="language-item">
+            <i class="fas fa-language"></i>
+            <div class="language-info">
+              <span class="language-name">Afrikaans</span>
+              <span class="language-level">Native</span>
+            </div>
+          </div>
+          <div class="language-item">
+            <i class="fas fa-language"></i>
+            <div class="language-info">
+              <span class="language-name">English</span>
+              <span class="language-level">Fluent</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ======= Education Section ======= -->
-  <section id="education" class="section" data-aos="fade-up">
-    <h2>Education</h2>
-    <p>Bachelor of Information Technology – North-West University (2019–2023)</p>
-    <p>Extra year in Math & Physics (2020)</p>
+  <!-- Education Section -->
+  <section class="education container" id="education" aria-labelledby="education-title">
+    <h2 class="section-title" id="education-title">Education</h2>
+    <div class="education-grid">
+      <div class="education-card">
+        <div class="education-icon">
+          <i class="fas fa-university"></i>
+        </div>
+        <div class="education-year">2015 - 2019</div>
+        <h3>Bachelor of IT</h3>
+        <h4>North-West University</h4>
+        <p>Focused on software development, mathematics, and physics.</p>
+        <span class="education-status completed">Completed</span>
+      </div>
+      <div class="education-card">
+        <div class="education-icon">
+          <i class="fas fa-book"></i>
+        </div>
+        <div class="education-year">2017 - 2018</div>
+        <h3>Additional Mathematics & Physics</h3>
+        <h4>North-West University</h4>
+        <p>Studied alongside IT degree for deeper understanding.</p>
+        <span class="education-status completed">Completed</span>
+      </div>
+    </div>
   </section>
 
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="section" data-aos="fade-up">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:luhardt@example.com">luhardt@example.com</a></p>
-    <p>Phone: +27 123 456 7890</p>
-    <p>Location: South Africa</p>
+  <!-- Contact Section -->
+  <section class="contact container" id="contact" aria-labelledby="contact-title">
+    <h2 class="section-title" id="contact-title">Contact Me</h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p>I’m currently available for new projects and opportunities.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-text">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+27821234567" class="contact-value">+27 82 123 4567</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-text">
+              <span class="contact-label">Email</span>
+              <a href="mailto:luhardt@example.com" class="contact-value">luhardt@example.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-text">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Potchefstroom, South Africa</span>
+            </div>
+          </div>
+        </div>
+        <div class="social-contact">
+          <h4>Find me online</h4>
+          <div class="social-links-contact">
+            <a
+              href="https://github.com/luhardt"
+              target="_blank"
+              rel="noopener"
+              class="social-link-contact"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/luhardtburger"
+              target="_blank"
+              rel="noopener"
+              class="social-link-contact"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form" aria-label="Contact form">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Your full name"
+          autocomplete="name"
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="your.email@example.com"
+          autocomplete="email"
+        />
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          required
+          placeholder="Write your message here..."
+          rows="5"
+        ></textarea>
+
+        <button type="submit" class="send-btn">Send Message</button>
+
+        <p id="form-message" role="alert" aria-live="polite"></p>
+      </form>
+    </div>
   </section>
 
-  <!-- ======= Footer ======= -->
   <footer class="footer">
-    <p>&copy; 2025 Luhardt Burger. All rights reserved.</p>
+    &copy; 2025 Luhardt Burger. All rights reserved.
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
   <script src="script.js"></script>
 </body>
 </html>
