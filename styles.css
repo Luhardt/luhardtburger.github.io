@@ -150,9 +150,9 @@ body {
   .hamburger {
     display: flex;
   }
-  /*.hero-bg-image {
+  .hero-bg-image {
     display: none;
-  }*/
+  }
 }
 
 
@@ -198,7 +198,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 8rem 1rem;
+  padding: 4rem 1rem;
 }
 .hero-text {
   flex: 1 1 500px;
@@ -235,7 +235,7 @@ body {
   color: var(--primary-color);
 }
 .hero-description {
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin-bottom: 1.5rem;
   color: var(--text-dark);
   max-width: 480px;
@@ -406,7 +406,7 @@ body {
   max-width: 720px;
   margin-bottom: 2rem;
   color: var(--text-dark);
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 .about-highlights {
   display: flex;
@@ -567,7 +567,7 @@ body {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  max-width: 720px;
+  max-width: 1100px;
 }
 .education-card {
   background-color: var(--background-light);
