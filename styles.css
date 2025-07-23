@@ -150,7 +150,13 @@ body {
   .hamburger {
     display: flex;
   }
+  .hero-bg-image {
+    display: none;
+  }
 }
+
+
+
 
 /* Hero Section */
 .hero {
@@ -163,17 +169,42 @@ body {
   position: relative;
   overflow: hidden;
 }
+
+
+
+.hero-bg-image {
+  position: absolute;
+  top: 60px;                  /* 👈 Starts just below your sticky menu bar */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  opacity: 0.3;
+  width: 600px;               /* 👈 Adjust image size */
+  max-width: 80%;
+  pointer-events: none;
+}
+
+.hero-bg-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: top center;
+}
+
+
 .hero-container {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 1rem;
+  padding: 8rem 1rem;
 }
 .hero-text {
   flex: 1 1 500px;
   max-width: 600px;
+  position: relative;
+  z-index: 2;
 }
 .greeting {
   font-size: 1.125rem;
