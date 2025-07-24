@@ -719,31 +719,33 @@ body {
     gap: 2rem;
   }
 
-  /* Fix the hero-content wrapper */
   .hero-content {
-    width: 100% !important;          /* ← Full width */
-    display: flex !important;        /* ← Flex layout */
-    flex-direction: column !important; /* ← Stack vertically */
-    align-items: center !important;  /* ← Center everything */
-    justify-content: center !important; /* ← Center vertically */
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
-  /* Constrain and center the hero text */
   .hero-text {
-    max-width: 500px;
+    max-width: 400px;
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center !important;   /* ← Force center text */
+    text-align: center !important;
   }
 
   .hero-title {
     font-size: 2.25rem;
   }
 
+  /* Center the icon and "Software Developer" text */
   .hero-subtitle {
     font-size: 1.25rem;
+    justify-content: center !important;  /* ← Center the flex content */
+    text-align: center !important;       /* ← Center the text */
+    width: 100% !important;              /* ← Full width for centering */
   }
 
   .hero-description {
@@ -771,7 +773,6 @@ body {
     padding: 1.5rem;
   }
 
-  /* Force centering for all text elements */
   .greeting,
   .hero-title,
   .hero-subtitle,
@@ -779,7 +780,7 @@ body {
     text-align: center !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    width: 100% !important;          /* ← Full width for centering */
+    width: 100% !important;
   }
 
   .social-links {
