@@ -153,8 +153,8 @@ body {
   
   /* Keep the background image on mobile but adjust it */
   .hero-bg-image {
-    width: 600px;  /* Smaller on mobile */
-    max-width: 100%;
+    width: 500px;  /* Smaller on mobile */
+    max-width: 90%;
     opacity: 0.2;  /* Make it slightly more transparent on mobile */
   }
 }
