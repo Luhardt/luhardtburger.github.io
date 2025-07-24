@@ -150,8 +150,12 @@ body {
   .hamburger {
     display: flex;
   }
+  
+  /* Keep the background image on mobile but adjust it */
   .hero-bg-image {
-    display: none;
+    width: 600px;  /* Smaller on mobile */
+    max-width: 100%;
+    opacity: 0.2;  /* Make it slightly more transparent on mobile */
   }
 }
 
@@ -738,9 +742,7 @@ body {
     padding: 1.5rem;
   }
 
-  .hero-bg-image {
-    display: none; /* Optional: hide background image for mobile */
-  }
+  
 }
 
 
