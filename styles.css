@@ -731,7 +731,7 @@ body {
   /* Constrain and center the hero text */
   .hero-text {
     max-width: 500px;
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
