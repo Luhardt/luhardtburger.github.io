@@ -719,13 +719,23 @@ body {
     gap: 2rem;
   }
 
+  /* Fix the hero-content wrapper */
+  .hero-content {
+    width: 100% !important;          /* ← Full width */
+    display: flex !important;        /* ← Flex layout */
+    flex-direction: column !important; /* ← Stack vertically */
+    align-items: center !important;  /* ← Center everything */
+    justify-content: center !important; /* ← Center vertically */
+  }
+
   /* Constrain and center the hero text */
   .hero-text {
-    max-width: 500px;        /* ← Match your photo width */
-    width: 90%;              /* ← Match your photo max-width */
+    max-width: 500px;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;     /* ← Centers everything inside */
+    align-items: center;
+    text-align: center !important;   /* ← Force center text */
   }
 
   .hero-title {
@@ -739,27 +749,43 @@ body {
   .hero-description {
     font-size: 0.95rem;
     max-width: 100%;
-    text-align: center;      /* ← Ensures text is centered */
+    text-align: center;
   }
 
   .hero-buttons {
     flex-direction: column;
     gap: 1rem;
-    width: 100%;             /* ← Full width within constrained container */
-    align-items: center;     /* ← Centers buttons */
+    width: 100%;
+    align-items: center;
   }
 
-  /* Make buttons slightly smaller and centered */
   .hero-buttons .btn {
     padding: 0.65rem 1.25rem;
     font-size: 0.95rem;
-    width: auto;             /* ← Let buttons size to content */
-    min-width: 160px;        /* ← Minimum width for consistency */
+    width: auto;
+    min-width: 160px;
   }
 
   .profile-card {
     width: 100%;
     padding: 1.5rem;
+  }
+
+  /* Force centering for all text elements */
+  .greeting,
+  .hero-title,
+  .hero-subtitle,
+  .hero-description {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;          /* ← Full width for centering */
+  }
+
+  .social-links {
+    justify-content: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
