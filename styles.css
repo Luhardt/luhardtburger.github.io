@@ -719,6 +719,12 @@ body {
     gap: 2rem;
   }
 
+  /* Constrain the hero text to match photo width */
+  .hero-text {
+    max-width: 600px;  /* ← Match this to your photo width */
+    width: 88%;        /* ← Same percentage as photo max-width */
+  }
+
   .hero-title {
     font-size: 2.25rem;
   }
@@ -729,21 +735,29 @@ body {
 
   .hero-description {
     font-size: 0.95rem;
-    max-width: 100%;
+    max-width: 100%;    /* ← Let it use full width of constrained container */
   }
 
   .hero-buttons {
     flex-direction: column;
     gap: 1rem;
+    width: 100%;       /* ← Use full width of constrained container */
+  }
+
+  /* Make buttons smaller to fit better */
+  .hero-buttons .btn {
+    padding: 0.65rem 1.25rem;  /* ← Slightly smaller padding */
+    font-size: 0.95rem;        /* ← Slightly smaller text */
   }
 
   .profile-card {
     width: 100%;
     padding: 1.5rem;
   }
+}
 
   
-}
+
 
 
 /* Styled Send Message Button (Blueish Theme, Glow Only on Hover) */
